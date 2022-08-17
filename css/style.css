@@ -1,0 +1,336 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	-webkit-scroll-behavior: smooth;
+	-o-scroll-behavior: smooth;
+	-moz-scroll-behavior: smooth;
+	-ms-scroll-behavior: smooth;
+	scroll-behavior: smooth;
+	outline: none;
+}
+body{
+	background-color: #1c1c1c;
+}
+h1{
+	font-size: 2.8em;
+	color: #fff;
+}
+h2{
+	font-size: 2em;
+	color: #fff;
+}
+p{
+	font-size: 1.4em;
+	color: #676767;
+}
+button{
+	background-color: #33C3D1;
+	color: #fff;
+}
+button:hover{
+	background-color: #E0D21D;
+	transition: 0.7s;
+	color: #000;
+}
+a{
+	color: #33C3D1;
+	text-decoration: none;
+}
+a:hover{
+	color: #E0D21D;
+	text-decoration: none;
+	transition: 0.7s;
+}
+ul{
+	list-style-type: none;
+}
+::placeholder{
+	color: #fff;
+	font-size: 1.2em;
+}
+
+
+
+
+
+/*----------- Navigation styling ----------*/
+nav{
+	width: 100%;
+	height: 80px;
+	background:#1c1c1c;
+	padding: 1px 4% 1px 4%;
+	position: fixed;
+	top: 0;
+	z-index: 20;
+	}
+nav>.logo{
+	width: 18%;
+	float: left;
+}
+
+nav>.nav-menu{
+	float: right;
+	width: 78%;
+}
+nav>.nav-menu ul{
+	display: flex;
+	justify-content: space-between;
+}
+nav>.nav-menu ul li a i{
+	font-size: 4em!important;
+}
+
+
+/*-----------/ Navigation styling ----------*/
+
+/*----------- Banner Carousel --------------*/
+
+header{
+	width: 100%;
+	height:85vh;
+	margin-top: 85px;
+	display: flex;
+	position: relative;
+}
+header .item{
+	height: 85vh;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+header .b-text{
+	position: absolute;
+	margin-top: 15%;
+	margin-left: 35%;
+	z-index: 100;
+	text-align: right;
+}
+header h3{
+	font-size: 4em;
+	letter-spacing: 3px;
+	color: #33C3D1;
+	animation-delay: 0.5s;
+}
+header span{
+	font-size: 2em;
+	letter-spacing: 2px;
+	color: white;
+	animation-delay: 1s;
+	color: #E0D21D;
+	}
+
+header .img1{
+	background-image: url(../images/banner-bg.jpg);
+}
+header .img2{
+	background-image: url(../images/graphic-bg.jpg);
+}
+header .img3{
+	background-image: url(../images/programing.jpg);
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev
+{
+	position: absolute;
+	top:90%;
+	width: 50px;
+	height: 50px;
+	background-color: #33C3D1;
+	color: #fff;
+	transition: 0.7s;
+}
+.owl-carousel .owl-nav button.owl-next:hover,
+.owl-carousel .owl-nav button.owl-prev:hover
+{
+	background-color: #E0D21D;
+
+}
+.owl-carousel .owl-nav button.owl-next{
+right:3%;
+}
+.owl-carousel .owl-nav button.owl-prev{
+right:6%;
+}
+
+/*-----------/ Banner Carousel --------------*/
+
+
+/*---------- about section -----------*/
+
+section#about{
+	width: 100%;
+	height: 820px;
+	position: relative;
+
+}
+section .about{
+	position: absolute;
+	width: 80%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	
+}
+section .about .about-text h1{
+	text-align: center;
+	border-bottom: 2px solid #33c3d1;
+	margin-bottom: 15px;
+}
+section .about .about-text p{
+	word-spacing: 5px;
+	text-align: justify;
+}
+section .about .about-text p span{
+	color: #fff;
+	font-weight: bolder;
+	font-weight: 800;
+}
+
+section .about h2{
+	text-align: center;
+	margin-top: 30px;
+}
+
+section .about .skill-con{
+	width: 100%;
+	background-color: #e0d21d;
+	margin: 5px 0;
+}
+section .about .skill{
+	background-color: #33c3d1;
+	text-align: right;
+	color: #000;
+}
+section .about .illustrator{
+	width: 70%;
+}
+section .about .photoshop{
+	width: 65%;
+}
+section .about .html{
+	width: 60%;
+}
+section .about .css{
+	width: 75%;
+}
+section .about .bootstrap{
+	width: 60%;
+}
+section .about .js{
+	width: 50%;
+}
+section .about .jquery{
+	width: 65%;
+}
+section .about .php{
+	width: 60%;
+}
+/*----------/ about section -----------*/
+
+/*---------- Portfolio section--------------*/
+#portfolio{
+	margin: auto;
+	margin-bottom: 20px;
+	width: 80%;
+
+	
+
+}
+#portfolio h1{
+	margin: auto;
+	margin-bottom: 20px;
+
+	text-align: center;
+	border-bottom: 2px solid #33c3d1;
+
+}
+#portfolio .pic-con{
+	display: flex;
+	flex-wrap: wrap;
+}
+#portfolio .pic-con .p-pic{
+	flex-basis: 25%;
+	margin: 30px;
+	
+}
+
+/*----------/ Portfolio section--------------*/
+
+/*---------- contact us section--------------*/
+
+.contact-con{
+	width: 100%;
+	position: relative;
+	margin-top: 20px;
+	height: 500px;
+}
+.contact-con .contact{
+	width: 80%;
+	margin: auto;
+}
+.contact-con h1{
+	margin: auto;
+	margin-bottom: 20px;
+	width: 80%;
+	text-align: center;
+	border-bottom: 2px solid #33c3d1;
+}
+.contact-con input , .contact-con textarea{
+	display: block;
+	width: 100%;
+	border:none;
+	border:2px solid #33c3d1;
+	border-radius: 5px;
+	margin-top: 10px;
+	background-color: #1c1c1c;
+	color: #fff;
+}
+.contact-con input{
+	height: 40px;
+}
+.contact-con button{
+	display: block;
+	margin: auto;
+	height: 40px;
+	width:200px;
+	margin-top: 10px;
+	border:none;
+	border:2px solid #33c3d1;
+	border-radius: 5px;
+	font-size: 1.3em;
+	font-weight: bolder;
+	cursor: pointer;
+
+}
+.contact-con textarea{
+	height: 200px;
+	resize: none;
+	overflow: auto;
+}
+
+.contact-con input:focus , .contact-con textarea:focus{
+	border-color: #E0D21D;
+}
+
+
+/*----------/ contact us section--------------*/
+
+/*----------  Footer style--------------*/
+
+footer{
+	width: 100%;
+	/* height: 50px; */
+	background-color: #33c3d1;
+	/* margin-top: px; */
+	padding: 2%;
+}
+footer p{
+	text-align: center;
+	color: #fff;
+}
+
+
+
+/*----------/  Footer style-------------*/
